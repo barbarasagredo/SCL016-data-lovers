@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+ 
+<head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon Whath</title>
+    <meta name="viewport" content="width=device-width, user scalable=no, initial-scale=1.0, maximum-scale-1, minimum-scale-1">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css>
   </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<body>
+  <header class="header">
+    <!-- nav bar responsive phone-->
+    <span class="nav-bar" id="btnNavBar"> <i class="fas fa-bars"></i> MENU </span>
+      <!-- items menu-->
+    <nav class="main nav">
+  
+      <ul class="menu" id="menu">
+        <li class="menu__item container-submenu"> <img class="logo" src="./image/POKEMON WHAT 2.png" alt="logo"></li>
+        <!-- item type -->
+        <li class="menu__item container-submenu"><a class="menu__link submenu-btn"href="#"> Type <i class="fas fa-angle-double-down"></i> </a>
+        <ul class="subMenu">
+          <!-- desplegable menu type -->
+          <li class="subMenuItem"><a href="" class="menu__link">Normal</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Fighting</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Flying</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Poison</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Ground</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Rock</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Bug</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Ghosth</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Steel</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Fire</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Water</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Plant</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Electric</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Psichic</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Ice</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Dragon</a></li>
+          <li class="subMenuItem"><a href="" class="menu__link">Fairy</a></li>
+        </ul>
+        </li>
+        <!-- item sort by -->
+        <li class="menu__item container-submenu"><a class="menu__link submenu-btn"href="#"> Sort By <i class="fas fa-angle-double-down"></i></a>
+          <ul class="subMenu">
+            <!-- desplegable menu sort by -->
+            <li class="subMenuItem"> <a href="" class="menu__link">A-Z</a></li>
+            <li class="subMenuItem"> <a href="" class="menu__link">Z-A</a></li>
+            <li class="subMenuItem"> <a href="" class="menu__link">001-151</a></li>
+            <li class="subMenuItem"> <a href="" class="menu__link">151-001</a></li>
+        </ul>
+      </li>
+      <li><input type="search" name="search" class="searchBtn"placeholder="search"></li>
+    </ul>
+        </nav>
+  </header>
+  <script src="main.js" type="module"></script>
+</body>
 </html>
+
+  
+
+
+    

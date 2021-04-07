@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body{
+    background-image: url("./image/copia.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    margin: 0;
+}
+/* nav bar design responsive  */
+.nav-bar{
+    background: #093954;
+    padding: 20px;
+    display: block;
+    color: #CBFFFC;
+    font-size: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+/*                           menu design general                          */
+/* 
+.logo-nav-container {
+display: flex;
+justify-content: space-between; */
+
+/* } */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 120px;
+    height: 100px;
+    float: left;
+    padding: 8px;
+    margin-left: -100%;
+   
+}
+
+.menu, .subMenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+   font-family: "Actor";
+   background: #093954;
+   width: 100%;
+   margin-left: -100%;
+   transition: all 0.5s;
+ 
+}
+/* nav menu fija */
+.menu {
+    position: fixed;
+    left: 0;
+    top:0;
+}
+
+.menu__link {
+    display: block;
+    padding: 20px;
+    color:#CBFFFC ;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+/* hidden submenu and dropdown*/
+.subMenu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.submenu-btn:hover {
+    color: #0088a9;
+
+}
+ /* color al pasar el mouse */
+.subMenu .menu__link:hover{
+  
+    background: #1480BD;
+}
+
+/* design dropdown submenu */
+.subMenu .menu__link{
+    background: #12567C;
+    padding-left: 40px;
+}
+
+.searchBtn {
+   margin-left: 10px;
+}
+/* javascript menu responsive phone */
+.showing {
+margin-left: 0;
+}
+
+/* RESPONSIVE computadora*/
+@media (min-width: 1024px){
+    /* nav bar hidden */
+    .nav-bar{
+        display: none;
+    }
+    
+    /* usamos flexbox
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 30% 10px;
+    cursor: pointer */
+    
+    .logo {
+        margin-left: 0;
+    }
+  
+  
+    /* showing menu desk */
+    .menu {
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .container-submenu{
+        position: relative;
+    }
+/* con overflow se muestra */
+    .subMenu{
+        position: absolute;
+        top: 60px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /* container del submenu se vea o no */
+    .container-submenu:hover .subMenu {
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
