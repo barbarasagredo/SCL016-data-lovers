@@ -66,20 +66,20 @@ Es así como construimos prototipos.
 
 Primeros prototipos en papel:
 
-![img] (https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/WhatsApp%20Image%202021-04-19%20at%209.56.24%20AM%20(1).jpeg)
+![img](https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/PROTOTIPO%20INICIAL.jpg)
 
-![img] (https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/WhatsApp%20Image%202021-04-19%20at%209.55.45%20AM.jpeg)
+![img](https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/PROTOTIPO%20BAJA.jpg)
 
  - Prototipo de alta fidelidad 
  
  El siguiente paso fue hacer un prototipo de alta fidelidad en Figma, para lo cual nos guiamos en las ideas que nos comentaron los usuarios a los que entrevistamos, y las ideas de prototipado en papel.
  La idea original fue crear páginas para filtrar y ordenar. 
 
-![img] (https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/PROTOTIPO%20ALTA%20HOME.png)
+![img](https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/PROTOTIPO%20ALTA%20HOME.png)
  
- Además el diseño de las tarjeta mutó de 3 tarjetas distintas con caras delanteras y traseras a sólo una.
+ Además el diseño de las tarjeta mutó de tres tarjetas distintas con caras delanteras y traseras a sólo una.
 
- ![img] (https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/PROTOTIPO%20ALTA%20TARJETA.png)
+ ![img](https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/PROTOTIPO%20ALTA%20TARJETA.png)
 
  En el siguiente link podemos encontrar el prototipo inicial realizado. 
 
