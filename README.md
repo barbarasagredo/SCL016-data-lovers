@@ -55,8 +55,10 @@ Para tener acceso rápido a las vistas por nombre o número.
 4. Prototipos
 
 Como mencionamos anteriormente, al estar enfocadas en un usuario que no conoce la interfaz de Pokemon Go, pero si la estética del animé nos enfocamos en una estética más cercana a esta.
+ 
+ ### Prototipado del proyecto.
 
-### Prototipo de baja fidelidad 
+- Prototipo de baja fidelidad 
 
 Como primeros pasos para desarrollar el prototipo, entrevistamos a cuatro usuarios en distintos niveles de fanatismo de Pokemon, quienes nos dieron feedback respecto a los datos que les gustaría ver en una página, o los datos que consideran relevantes en cuanto a su experiencia. 
 
@@ -64,10 +66,26 @@ Es así como construimos prototipos.
 
 Primeros prototipos en papel:
 
-![img]  
+![img] (https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/WhatsApp%20Image%202021-04-19%20at%209.56.24%20AM%20(1).jpeg)
+
+![img] (https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/WhatsApp%20Image%202021-04-19%20at%209.55.45%20AM.jpeg)
+
+ - Prototipo de alta fidelidad 
+ 
+ El siguiente paso fue hacer un prototipo de alta fidelidad en Figma, para lo cual nos guiamos en las ideas que nos comentaron los usuarios a los que entrevistamos, y las ideas de prototipado en papel.
+ La idea original fue crear páginas para filtrar y ordenar. 
+
+![img] (https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/PROTOTIPO%20ALTA%20HOME.png)
+ 
+ Además el diseño de las tarjeta mutó de 3 tarjetas distintas con caras delanteras y traseras a sólo una.
+
+ ![img] (https://raw.githubusercontent.com/barbarasagredo/SCL016-data-lovers/master/src/image/PROTOTIPO%20ALTA%20TARJETA.png)
+
+ En el siguiente link podemos encontrar el prototipo inicial realizado. 
+
+ https://www.figma.com/file/lPXkOpwaYM3tLszVszgPTU/II.-Data-Lover---Pokemon-Go?node-id=0%3A1
 
 
+#### Diseño final de la página.
 
-### Prototipo de alta fidelidad 
-
-
+El diseño final de la página fue probada con dos usuarios, los cuales están conformes con el diseño. Finalmente quedamos con una tarjeta por cada Pokemon. Existe dos opciones de Ordenar: alfabética y numéricamente; y una opción para Filtrar la data. 
