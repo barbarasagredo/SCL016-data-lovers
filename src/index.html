@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
- 
+
 <head>
-    <meta charset="utf-8">
-    <title>Pokemon Whath</title>
-    <meta name="viewport" content="width=device-width, user scalable=no, initial-scale=1.0, maximum-scale-1, minimum-scale-1">
+  <meta charset="utf-8">
+  <title>Pokemon What</title>
+  <meta name="viewport"
+    content="width=device-width, user scalable=no, initial-scale=1.0, maximum-scale-1, minimum-scale-1">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
 <body>
-  <section id="firstPage">
   <header class="header">
     <!-- nav bar responsive phone-->
     <span class="nav-bar" id="btnNavBar"> <i class="fas fa-bars"></i> MENU </span>
-      <!-- items menu-->
+    <!-- items menu-->
     <nav class="main nav">
       <ul class="menu" id="menu">
-        <li class="menu__item container-submenu"> <img class="logo" src="./image/POKEMON WHAT 2.png" alt="logo"></li>
+        <button id="logoHome" class="menu__item container-submenu"> <img class="logo"
+            src="./image/POKEMON WHAT LOGO.png" alt="logo"></button>
         <!-- item type -->
-        <li class="menu__item container-submenu"><a class="menu__link submenu-btn"href="#"> Type <i class="fas fa-angle-double-down"></i> </a>
-        <ul class="subMenu">
+        <li class="menu__item container-submenu"><a class="menu__link submenu-btn" href="#"> Type <i
+              class="fas fa-angle-double-down"></i> </a>
+
           <!-- desplegable menu type -->
-          <li class="subMenuItem"><a href="" class="menu__link">Normal</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Fighting</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Flying</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Poison</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Ground</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Rock</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Bug</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Ghosth</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Steel</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Fire</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Water</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Plant</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Electric</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Psichic</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Ice</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Dragon</a></li>
-          <li class="subMenuItem"><a href="" class="menu__link">Fairy</a></li>
-        </ul>
-        </li>
-        <!-- item sort by -->
-        <li class="menu__item container-submenu"><a class="menu__link submenu-btn"href="#"> Sort By <i class="fas fa-angle-double-down"></i></a>
+          <ul class="subMenu">
+            <!-- desplegable menu type -->
+            <li ><a href="#" class="menu__link" id="normal">Normal</a></li>
+            <li ><a href="#" class="menu__link" id="fighting">Fighting</a></li>
+            <li ><a href="#" class="menu__link" id="flying">Flying</a></li>
+            <li ><a href="#" class="menu__link" id="poison">Poison</a></li>
+            <li ><a href="#" class="menu__link" id="ground">Ground</a></li>
+            <li ><a href="#" class="menu__link" id="rock">Rock</a></li>
+            <li ><a href="#" class="menu__link" id="bug">Bug</a></li>
+            <li ><a href="#" class="menu__link" id="ghost">Ghost</a></li>
+            <li ><a href="#" class="menu__link" id="fire">Fire</a></li>
+            <li ><a href="#" class="menu__link" id="water">Water</a></li>
+            <li ><a href="#" class="menu__link" id="grass">Grass</a></li>
+            <li ><a href="#" class="menu__link" id="electric">Electric</a></li>
+            <li ><a href="#" class="menu__link" id="psychic">Psychic</a></li>
+            <li ><a href="#" class="menu__link" id="ice">Ice</a></li>
+            <li ><a href="#" class="menu__link" id="dragon">Dragon</a></li>
+          </ul>
+
+          <!-- item sort by -->
+        <li class="menu__item container-submenu"><a class="menu__link submenu-btn" href="#"> Sort By <i
+              class="fas fa-angle-double-down"></i></a>
           <ul class="subMenu">
             <!-- desplegable menu sort by -->
-            <li class="subMenuItem"> <a href="" class="menu__link">A-Z</a></li>
-            <li class="subMenuItem"> <a href="" class="menu__link">Z-A</a></li>
-            <li class="subMenuItem"> <a href="" class="menu__link">001-151</a></li>
-            <li class="subMenuItem"> <a href="" class="menu__link">151-001</a></li>
-        </ul>
-      </li>
-      <li><input type="search" name="search" class="searchBtn"placeholder="search"></li>
-    </ul>
-  </nav>
+            <li class="subMenuItem"> <a href="#" class="menu__links" id="sort1-2">001-151</a></li>
+            <li class="subMenuItem"> <a href="#" class="menu__links" id="sort2-1">151-001</a></li>
+            <li class="subMenuItem"> <a href="#" class="menu__links" id="sortA-Z">A-Z</a></li>
+            <li class="subMenuItem"> <a href="#" class="menu__links" id="sortZ-A">Z-A</a></li>
+          </ul>
+        </li>
+        <li><input type="search" name="search" class="searchBtn" placeholder="search"></li>
+      </ul>
+    </nav>
   </header>
-  <div id="pokeView"></div>
-</section>
-  <footer>© Pokemon What - 2021.</footer>
+  <br>
+
+  <section id="firstPage">
+    <div>
+      <h1> Pokemon Kanto's Generation</h1>
+      <h2 id="emptyTitle"></h2>
+      <div id="pokeView">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <ul>
+      <li id="footerText"> © Pokemon What - 2021.</li>
+      <div id="RRSS">
+        <a href="https://www.facebook.com/PokemonGO/"> <img src="./image/FACEBOOK.png" id="iconFb"> </a>
+        <a href="https://www.instagram.com/pokemongoapp"> <img src="./image/INSTAGRAM.png" id="iconIg"> </a>
+        <a href="https://twitter.com/pokemongoapp"> <img src="./image/TWITTER.png" id="iconTw"> </a>
+      </div>
+    </ul>
+  </footer>
   <script src="main.js" type="module"></script>
 </body>
+
 </html>
-
-  
-
-
-    

@@ -1,23 +1,23 @@
-import { example, anotherExample } from '../src/data.js';
+import { pokeSortAB } from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('esta funcion es correcta', () => {
+  it('funcion ordenar de A- Z', () => {
+    expect(typeof pokeSortAB).toBe('undefined');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('returns `-1`', () => {
+    expect(pokeSortAB("a","b")).toBe('abc');
   });
 });
+
+
+// describe('anotherExample', () => {
+//   it('is a function', () => {
+//     expect(typeof anotherExample).toBe('function');
+//   });
+
+//   it('returns `anotherExample`', () => {
+//     expect(anotherExample()).toBe('OMG');
+//   });
+// });

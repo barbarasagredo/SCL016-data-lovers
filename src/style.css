@@ -1,24 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon');
+@import url('http://fonts.cdnfonts.com/css/good-people');
+@import url('http://fonts.cdnfonts.com/css/brokenbrush');
 
 * {
     box-sizing: border-box;
     margin: 0;
+}
 
+#home{
+  display: block;
 }
 
 body{
-    background-image: url("./image/copia.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
-    margin: 0;
+  margin: 0;
+  background-image: url(./image/BACKGROUND\ LIGHTS.jpg);
+  background-repeat: initial;
+  background-position: center;
+  background-size: 100%;
 }
 
-#firstPage{
-    display: flex;
+h1{
+  background: #47c3e6;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: flex;
+  justify-content: space-around;
+  font-family:'BrokenBrush';
+  font-weight: normal;
+  font-size: 30px;
+  color: #a876e8;
 }
+
+#emptyTitle{
+  display: flex;
+  justify-content: center;
+  font-family: 'good people';
+  font-weight: normal;
+  font-size: 30px;
+  color: yellow;
+}
+
+.header {
+    height: 50vh;
+    background-image: url("./image/BACKGROUND\ IMAGE.png");
+    background-position: 0px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 /* nav bar design responsive  */
 .nav-bar{
     background: #093954;
@@ -29,23 +62,14 @@ body{
     width: 100%;
     cursor: pointer;
 }
-/*                           menu design general                          */
-/* 
-.logo-nav-container {
-display: flex;
-justify-content: space-between; */
 
-/* } */
 .logo {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    width: 120px;
-    height: 100px;
-    float: left;
-    padding: 8px;
+    width: 70px;
+    padding: 0px;
     margin-left: -100%;
-   
 }
 
 .menu, .subMenu{
@@ -56,12 +80,15 @@ justify-content: space-between; */
 
 .menu {
    font-family: "Actor";
+   display: flex;
    background: #093954;
    width: 100%;
    margin-left: -100%;
    transition: all 0.5s;
- 
+   z-index: 2;
+   align-items: center;
 }
+
 /* nav menu fija */
 .menu {
     position: fixed;
@@ -71,36 +98,57 @@ justify-content: space-between; */
 
 .menu__link {
     display: block;
-    padding: 20px;
+    padding: 4px;
     color:#CBFFFC ;
     font-size: 1.2em;
     text-decoration: none;
 }
+
+.menu__links {
+  display: block;
+  padding: 4px;
+  color:#CBFFFC ;
+  font-size: 1.2em;
+  text-decoration: none;
+}   
+
 /* hidden submenu and dropdown*/
 .subMenu {
     height: 0;
     overflow: hidden;
     transition: all 0.3s ease 0s;
 }
+
 .submenu-btn:hover {
     color: #0088a9;
-
 }
- /* color al pasar el mouse */
+
+ /* color al pasar el mouse type*/
 .subMenu .menu__link:hover{
-  
     background: #1480BD;
 }
 
-/* design dropdown submenu */
+/* color al pasar el mouse sort*/
+.subMenu .menu__links:hover{ 
+  background: #1480BD;
+}
+
+/* design dropdown submenu type */
 .subMenu .menu__link{
     background: #12567C;
     padding-left: 40px;
 }
 
+/* design dropdown submenu sort*/
+.subMenu .menu__links{
+  background: #12567C;
+  padding-left: 40px;
+}
+
 .searchBtn {
    margin-left: 10px;
 }
+
 /* javascript menu responsive phone */
 .showing {
 margin-left: 0;
@@ -112,34 +160,34 @@ margin-left: 0;
     .nav-bar{
         display: none;
     }
-    
-    /* usamos flexbox
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    padding: 30% 10px;
-    cursor: pointer */
-    
-    .logo {
+
+    .logo{
         margin-left: 0;
     }
-  
   
     /* showing menu desk */
     .menu {
         margin-left: 0;
         display: flex;
         justify-content: space-between;
-       
     }
+
     .container-submenu{
         position: relative;
     }
+
+    .header {
+      height: 100vh;
+      background-image: url("./image/BACKGROUND\ IMAGE.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
 /* con overflow se muestra */
     .subMenu{
         position: absolute;
-        top: 60px;
+        top: 43px;
         width: 200px;
         overflow: visible;
         z-index: 1000;
@@ -151,107 +199,180 @@ header {
     .container-submenu:hover .subMenu {
         opacity: 1;
         visibility: visible;
-
     }
 }
-#templateForEach{
-    display: flex;
-    width: 270px;
-    height: 350px;
-    left: 420px;
-    top: 230px;
-    margin: 2%;
-    margin-bottom: 10%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  
-  #pokeView{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
-  }
-  .cardElementsFront{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  
-  #templateForEach{
-    display: flex;
-    width: 270px;
-    height: 350px;
-    left: 420px;
-    top: 230px;
-    margin: 2%;
-    margin-bottom: 10%;
-  }
-  
-  .cardLogo { 
-  width: 20%;
-  margin-left: 5%;
-  }
-  
-  
-  .card-background{
-  background-image: url(./IMAGES/CARD\ BACKGROUND.jpeg);
-  background-size: auto;
-  }
-  
-  .white-conteiner{
+
+button{
+  background-color: transparent;
+  border: none;
+}
+
+/*TEMPLATES*/
+#pokeView{
+  background-image: url(./image/BACKGROUND\ LIGHTS.jpg);
   display: flex;
-  background-color: #f1f1f1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cardLogoFront { 
+  width: 20%;
+  margin-left: -66%;
+}
+
+.cardLogoBack { 
+  width: 20%;
+}
+
+.card-number{
+  margin-top: -11%;
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+.card-title{
+  font-size: 140%;
+  font-weight: bolder;
+  text-decoration: underline;
+  margin: -3%;
+}
+
+.typeTitle{
+  font-size: 80%;
+  margin: 9%;
+}
+
+.sizeTitle {
+  font-size: 80%;
+  margin: 11%;
+}
+
+.card-type{
+  font-size: 80%;
+  margin: -5%;
+  font-weight: bold;
+}
+
+.card-size{
+  font-size: 70%;
+  margin: -7%;
+}
+
+.card-weeknesses {
+  width: 160px;
+  font-size: 78%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 14%;
+  z-index: 2;
+}
+
+.white-containerFront{
+  display: flex;
+  background-color: #f1f1f17d;
+  width: 195px;
+  height: 180px;
+  margin-left: 6%;
+  margin-top: -76%;
+  border-radius: 10px 10px 0px 0px;
+  }
+
+.white-containerBack{
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 10px;
-  
-  
+  background-color: #f1f1f17d;
+  width: 195px;
+  height: 240px;
+  margin: -105% 6%;
+  border-radius: 10px;
   }
+
+/*FLIP CARD*/
+.flip-card {
+  width: 220px;
+  height: 320px;
+  perspective: 1000px; 
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 14%;
+  text-transform: uppercase; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flipElementsFront, .flipElementsBack {
+  background-image: url(./image/CARD\ BACKGROUND.jpeg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flipElementsFront {
+  background-color: transparent;
+  color: black;
+}
+
+.flipElementsBack {
+  background-color: transparent;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+/* FOOTER */
+
+footer{
+  display: flex;
+  background-color: #f1f1f1;
+  font-family: "Actor";
+  padding: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;  
+}
+
+#footerText{
+  list-style: none;
+}
+
+#iconTw{
+  list-style-image: url(./image/TWITTER.png);
+  width: 24px;
+}
+
+#iconIg{
+  list-style-image: url(./image/INSTAGRAM.png);
+  width: 24px;
+ 
+}
+
+#iconFb{
+  list-style-image: url(./image/FACEBOOK.png);
+  width: 24px;
   
-  
-  /*FLIP CARD */
-  
-  .flip-card {
-    background-color: transparent;
-    width: 270px;
-    height: 370px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; 
-  }
-  
-  .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-    }
-  
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-  
-    .flipElementsFront, .flipElementsBack {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden; 
-      backface-visibility: hidden;
-    }
-  
-    .flipElementsFront {
-      background-color: transparent;
-      color: black;
-    }
-    
-    .flipElementsBack {
-      background-color: transparent;
-      color: black;
-      transform: rotateY(180deg);
-    }
-  
+}
+footer a{
+  text-decoration: none;
+}
+
+#RRSS{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3px;
+}
