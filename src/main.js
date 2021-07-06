@@ -73,7 +73,7 @@ chooseTypes.forEach(element => {
 })
 
 /* FUNCTION SORT */
-const pokeSortNum = pokeKanto.sort ((a,b) => {
+ const pokeSortNum = pokeKanto.sort ((a,b) => {
   if (a.num > b.num) {
     return 1;
   }
@@ -82,6 +82,7 @@ const pokeSortNum = pokeKanto.sort ((a,b) => {
   }
   return 0;
 });
+
 
 const choose1Z = document.getElementById("sort1-2")
 choose1Z.addEventListener("click", ()=>{
@@ -92,6 +93,7 @@ const chooseZ1 = document.getElementById("sort2-1")
 chooseZ1.addEventListener("click", ()=>{
   template(pokeSortNum.reverse())
 });
+
 
 const pokeSortAB = pokeKanto.sort ((a,b) => {
   if (a.name > b.name) {
